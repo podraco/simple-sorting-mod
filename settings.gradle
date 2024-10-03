@@ -1,0 +1,23 @@
+pluginManagement {
+	repositories {
+		maven {
+			name = 'Fabric'
+			url = 'https://maven.fabricmc.net/'
+		}
+		mavenCentral()
+		gradlePluginPortal()
+	}
+}
+
+plugins {
+    id "dev.kikugie.stonecutter" version "0.4.5"
+}
+
+stonecutter {
+    shared {
+        versions "1.21"
+        vers()
+    }
+
+    create rootProject
+}
